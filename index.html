@@ -8,6 +8,7 @@
     <meta property="og:url" content="https://titulinis.lt/" />
     <meta property="og:type" content="website" />
     <link rel="canonical" href="https://titulinis.lt/" />
+    <script src="/libs/aos/aos.js"></script>
     <title>Titulinis - Panevėžio rajono savivaldybės viešoji biblioteka</title>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
@@ -18,47 +19,147 @@
           <div class="topbar-content content-container">
             <ul>
               <li>
-                <a href="info@spc.kretingos.lt"> info@spc.kretingos.lt </a>
+                <a href="mailto:info@spc.kretingos.lt">info@spc.kretingos.lt</a>
               </li>
               <li>Klaipėdos g. 133C, LT-97156 Kretinga</li>
               <li>
-                <a href="tel:844578988"> Tel. (8 445) 78988 </a>
+                <a href="tel:844578988">Tel. (8 445) 78988</a>
               </li>
             </ul>
           </div>
         </nav>
         <div class="header-content content-container">
           <div class="logo">
-            <img src="/images/spc-loco.png" alt="SPC logo" />
+            <img
+              data-aos="zoom-in-right"
+              src="/images/spc-loco.png"
+              alt="SPC logo"
+            />
+          </div>
+          <div class="mobile-menu">
+            <div class="icons">
+              <img
+                src="/images/icons/icon1.svg"
+                alt="icon1"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              />
+              <img
+                src="/images/icons/icon2.svg"
+                alt="icon2"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              />
+              <img
+                src="/images/icons/icon3.svg"
+                alt="icon3"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              />
+              <img
+                src="/images/icons/icon4.svg"
+                alt="icon4"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              />
+            </div>
+            <button id="hamburger">
+              <img src="./images/icons/hamburger.svg" alt="menu" />
+            </button>
           </div>
           <div class="header-elements">
             <div class="top-menu">
               <ul class="links">
-                <li>DUK</li>
-                <li>Karjera</li>
-                <li>Nuorodos</li>
+                <li>
+                  <a href="#" data-aos="fade-left" data-aos-delay="0">DUK</a>
+                </li>
+                <li>
+                  <a href="#" data-aos="fade-left" data-aos-delay="100"
+                    >Karjera</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-aos="fade-left" data-aos-delay="200"
+                    >Nuorodos</a
+                  >
+                </li>
               </ul>
               <div class="search">
                 <img src="/images/icons/search.svg" alt="search" />
               </div>
               <div class="icons">
-                <img src="/images/icons/icon1.svg" alt="icon1" />
-                <img src="/images/icons/icon2.svg" alt="icon2" />
-                <img src="/images/icons/icon3.svg" alt="icon3" />
-                <img src="/images/icons/icon4.svg" alt="icon4" />
+                <img
+                  src="/images/icons/icon1.svg"
+                  alt="icon1"
+                  data-aos="fade-right"
+                  data-aos-delay="0"
+                />
+                <img
+                  src="/images/icons/icon2.svg"
+                  alt="icon2"
+                  data-aos="fade-right"
+                  data-aos-delay="100"
+                />
+                <img
+                  src="/images/icons/icon3.svg"
+                  alt="icon3"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                />
+                <img
+                  src="/images/icons/icon4.svg"
+                  alt="icon4"
+                  data-aos="fade-right"
+                  data-aos-delay="300"
+                />
               </div>
             </div>
             <nav class="main-menu">
               <ul class="main-menu-container">
-                <li>Naujienos</li>
-                <li>Veikla</li>
-                <li>Struktūra ir kontaktai</li>
-                <li>Administracinė informacija</li>
-                <li>Korupcijos prevencija</li>
+                <li>
+                  <a href="#" data-aos="fade-up" data-aos-delay="0"
+                    >Naujienos</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-aos="fade-up" data-aos-delay="100">Veikla</a>
+                </li>
+                <li>
+                  <a href="#" data-aos="fade-up" data-aos-delay="200"
+                    >Struktūra ir kontaktai</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-aos="fade-up" data-aos-delay="300"
+                    >Administracinė informacija</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-aos="fade-up" data-aos-delay="400"
+                    >Korupcijos prevencija</a
+                  >
+                </li>
               </ul>
             </nav>
           </div>
         </div>
+      </div>
+      <div class="mobile-nav-container" id="side-menu">
+        <button id="close-btn" class="close-btn">
+          <img src="/images/icons/close.svg" alt="close" />
+        </button>
+        <ul class="links">
+          <li><a href="#">DUK</a></li>
+          <li><a href="#">Karjera</a></li>
+          <li><a href="#">Nuorodos</a></li>
+        </ul>
+        <ul class="links">
+          <li><a href="#">Naujienos</a></li>
+          <li><a href="#">Veikla</a></li>
+          <li><a href="#">Struktūra ir kontaktai</a></li>
+          <li><a href="#">Administracinė informacija</a></li>
+          <li><a href="#">Korupcijos prevencija</a></li>
+        </ul>
       </div>
     </header>
     <main>
@@ -67,65 +168,64 @@
         <div class="work-times">
           <p class="title-with-line">Darbo laikas</p>
           <ul class="work-time-list">
-            <li class="work-time">
+            <li class="work-time" data-aos="fade-up" data-aos-delay="0">
               Pirmadienis <br />
               8.00–17.00
             </li>
-            <li class="work-time">
+            <li class="work-time" data-aos="fade-up" data-aos-delay="100">
               Ketvirtadienis <br />
               8.00–17.00
             </li>
-
-            <li class="work-time">
+            <li class="work-time" data-aos="fade-up" data-aos-delay="200">
               Antradienis<br />
               8.00–17.00
             </li>
-            <li class="work-time">
+            <li class="work-time" data-aos="fade-up" data-aos-delay="300">
               Penktadienis<br />
               8.00–15.45
             </li>
-            <li class="work-time">
+            <li class="work-time" data-aos="fade-up" data-aos-delay="400">
               Trečiadienis<br />
               8.00–17.00
             </li>
-            <li class="work-time">
+            <li class="work-time" data-aos="fade-up" data-aos-delay="500">
               Pietų pertrauka<br />
               12.00–12.45
             </li>
           </ul>
         </div>
         <div class="feature-list">
-          <div class="feature-item">
+          <div class="feature-item" data-aos="fade-right" data-aos-delay="0">
             <div class="feature-item-img">
               <img src="/images/icons/feature1.svg" alt="feature1" />
             </div>
             <p>Paslaugos vaikams ir šeimai</p>
           </div>
-          <div class="feature-item">
+          <div class="feature-item" data-aos="fade-right" data-aos-delay="100">
             <div class="feature-item-img">
               <img src="/images/icons/feature2.svg" alt="feature2" />
             </div>
             <p>Paslaugos senjorams ir asmenims su negalia</p>
           </div>
-          <div class="feature-item">
+          <div class="feature-item" data-aos="fade-right" data-aos-delay="200">
             <div class="feature-item-img">
               <img src="/images/icons/feature3.svg" alt="feature3" />
             </div>
             <p>Globos centro paslaugos</p>
           </div>
-          <div class="feature-item">
+          <div class="feature-item" data-aos="fade-right" data-aos-delay="300">
             <div class="feature-item-img">
               <img src="/images/icons/feature4.svg" alt="feature4" />
             </div>
             <p>Nakvynės namų paslaugos</p>
           </div>
-          <div class="feature-item">
+          <div class="feature-item" data-aos="fade-right" data-aos-delay="400">
             <div class="feature-item-img">
               <img src="/images/icons/feature5.svg" alt="feature5" />
             </div>
             <p>Transporto paslaugos</p>
           </div>
-          <div class="feature-item">
+          <div class="feature-item" data-aos="fade-right" data-aos-delay="500">
             <div class="feature-item-img">
               <img src="/images/icons/feature6.svg" alt="feature6" />
             </div>
@@ -153,17 +253,17 @@
       <div class="news-container">
         <div class="news-content content-container">
           <div class="news-content-top">
-            <h2>Naujienos</h2>
+            <h2 class="section-title">Naujienos</h2>
             <a href="#" class="more">VISOS NAUJIENOS → </a>
           </div>
           <div class="news-list">
-            <div class="news-item">
+            <div class="news-item" data-aos="fade-up" data-aos-delay="100">
               <img src="/images/news1.png" alt="news1" />
               <p class="date">2024-03-28</p>
               <p class="title">Siūlome darbą</p>
               <a href="#" class="more">Plačiau → </a>
             </div>
-            <div class="news-item">
+            <div class="news-item" data-aos="fade-up" data-aos-delay="200">
               <img src="/images/news2.png" alt="news2" />
               <p class="date">2024-03-25</p>
               <p class="title">
@@ -171,7 +271,7 @@
               </p>
               <a href="#" class="more">Plačiau → </a>
             </div>
-            <div class="news-item">
+            <div class="news-item" data-aos="fade-up" data-aos-delay="300">
               <img src="/images/news3.png" alt="news3" />
               <p class="date">2024-02-26</p>
               <p class="title">
@@ -187,35 +287,44 @@
         <div class="about-us-content content-container">
           <img class="shape" src="/images/about-us-shape.png" alt="about us" />
           <div class="about-us-content-left">
-            <h2 class="section-title">Apie mus</h2>
+            <h2 class="section-title" data-aos="fade-up">Apie mus</h2>
             <p class="details">
               Mes siekiame sukurti įstaigą, kuri sugebėtų tenkinti visuomenės
               socialinius poreikius.
-              <b
-                >Bendradarbiavimas, dalyvavimas, kompleksiškumas, prieinamumas,
+              <b>
+                Bendradarbiavimas, dalyvavimas, kompleksiškumas, prieinamumas,
                 socialinis teisingumas ir solidarumas, tinkamumas,
-                visapusiškumas</b
-              >
+                visapusiškumas
+              </b>
               - tai mūsų darbo principai.
             </p>
             <button class="action-btn">PLAČIAU</button>
           </div>
           <div class="about-us-content-right">
             <div class="about-us-img">
-              <img src="/images/about-us.png" alt="about us" />
+              <img
+                src="/images/about-us.png"
+                alt="about us"
+                data-aos="zoom-in"
+              />
             </div>
           </div>
         </div>
       </div>
       <div class="map-container">
         <img src="/images/map-base.png" alt="map" />
-        <img class="marker" src="/images/icons/marker.svg" alt="marker" />
+        <img
+          class="marker"
+          src="/images/icons/marker.svg"
+          alt="marker"
+          data-aos="zoom-in"
+        />
       </div>
     </main>
     <footer>
       <div class="container content-container">
         <div class="footer-content">
-          <div class="footer-item">
+          <div class="footer-item" data-aos="fade-up" data-aos-delay="100">
             <h3>Kretingos socialinių paslaugų centras</h3>
             <p>
               Klaipėdos g. 133C, LT-97156 Kretinga Tel. (8 445) 78988, el. p.
@@ -223,7 +332,7 @@
               asmenų registre Kodas 190278395
             </p>
           </div>
-          <div class="footer-item">
+          <div class="footer-item" data-aos="fade-up" data-aos-delay="200">
             <h3 class="title-with-line">Darbo laikas</h3>
             <div class="work-times">
               <ul class="work-time-list">
@@ -235,7 +344,6 @@
                   Ketvirtadienis <br />
                   8.00–17.00
                 </li>
-
                 <li class="work-time">
                   Antradienis<br />
                   8.00–17.00
@@ -255,7 +363,7 @@
               </ul>
             </div>
           </div>
-          <div class="footer-item">
+          <div class="footer-item" data-aos="fade-up" data-aos-delay="300">
             <h3 class="title-with-line">Informacija</h3>
             <ul>
               <li>Teisinė informacija</li>
@@ -270,13 +378,17 @@
               <li>Konsultavimasis su visuomene</li>
             </ul>
           </div>
-          <div class="footer-item footer-item-last">
+          <div
+            class="footer-item footer-item-last"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <h3 class="title-with-line">Mums rūpi Jūsų nuomonė</h3>
             <p>
               Kviečiame įvertinti VŠĮ Kretingos socialinių paslaugų centro
               paslaugų kokybę
             </p>
-            <a href="#">VERTINTI &rarr;</a>
+            <a href="#">VERTINTI →</a>
             <img src="/images/icons/facebook.svg" alt="facebook" />
           </div>
         </div>
@@ -293,5 +405,6 @@
         <img class="footer-shape" src="/images/shape-2.png" alt="shape" />
       </div>
     </footer>
+    <script src="/js/script.js"></script>
   </body>
 </html>
