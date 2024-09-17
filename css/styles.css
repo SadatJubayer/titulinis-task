@@ -116,16 +116,19 @@ div.container.fluid {
   line-height: 23px;
 }
 
-/* Header */
+.content-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  color: var(--color-5);
+}
+
+/* Header starts */
 
 nav.topbar {
   background-color: var(--color-2);
 }
 nav.topbar .topbar-content {
-  max-width: 1440px;
-  margin: 0 auto;
   padding: 12px 100px;
-  color: var(--color-5);
 }
 nav.topbar ul {
   margin: 0;
@@ -145,13 +148,16 @@ div.header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1440px;
-  margin: 0 auto;
   padding: 0px 100px;
 }
 div.header-content .logo {
   height: 97px;
   width: 97px;
+}
+div.header-content .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 div.header-content ul {
   list-style: none;
@@ -224,6 +230,7 @@ div.hero .feature-list {
   display: flex;
   gap: 24px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 div.hero .feature-list .feature-item {
   display: flex;
@@ -255,8 +262,6 @@ div.attention-container {
   background-color: var(--color-2);
 }
 div.attention-container .attention-content {
-  max-width: 1440px;
-  margin: 0 auto;
   padding: 150px 100px 60px;
   display: flex;
   flex-direction: column;
@@ -274,8 +279,6 @@ div.news-container {
   background-color: var(--color-1);
 }
 div.news-content {
-  max-width: 1440px;
-  margin: 0 auto;
   padding: 88px 100px 50px;
 }
 div.news-content .news-content-top {
@@ -304,11 +307,13 @@ div.news-content .news-content-top a:hover {
 div.news-list {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 div.news-list .news-item {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: 400px;
 }
 
 div.news-list .news-item p {
@@ -341,13 +346,12 @@ div.about-us-container {
   margin-top: -100px;
 }
 div.about-us-content {
-  max-width: 1440px;
-  margin: 0 auto;
   padding: 88px 100px 50px;
   display: flex;
   align-items: center;
   gap: 50px;
   position: relative;
+  flex-wrap: wrap;
 }
 div.about-us-content .shape {
   position: absolute;
@@ -400,8 +404,6 @@ footer {
   margin-top: -8px;
 }
 footer .container {
-  max-width: 1440px;
-  margin: 0 auto;
   padding: 100px 100px 50px;
   position: relative;
   overflow: hidden;
@@ -410,6 +412,7 @@ footer .container {
 footer .footer-content {
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
 }
 footer .footer-content h3 {
   font-size: 18px;
@@ -442,6 +445,7 @@ footer .footer-content .footer-item-last {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 footer .footer-content .footer-item-last img {
@@ -463,6 +467,7 @@ footer .footer-content .footer-item-last img {
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .footer-bottom .footer-bottom-left p {
   margin: 0;
@@ -471,4 +476,88 @@ footer .footer-shape {
   position: absolute;
   right: -6%;
   bottom: -66%;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 1.5rem;
+  }
+  nav.topbar ul {
+    gap: 2px;
+    font-size: 10px;
+  }
+  nav.topbar ul p {
+    padding: 0;
+  }
+  div.header-content .header-elements {
+    display: none;
+  }
+  nav.topbar .topbar-content {
+    display: none;
+  }
+  div.header-content .logo {
+    height: 40px;
+    width: 40px;
+  }
+  nav.topbar .topbar-content {
+    padding: 12px;
+  }
+  div.header-content {
+    padding: 12px;
+  }
+  div.hero img {
+    position: static;
+    min-height: 500px;
+  }
+  div.hero .feature-list {
+    position: static;
+    margin: 20px 0px;
+  }
+  div.hero .work-times {
+    position: absolute;
+    top: 25%;
+    justify-content: flex-start;
+  }
+  div.hero .feature-list .feature-item {
+    padding: 20px;
+    margin: -8px;
+  }
+  div.hero .feature-list .feature-item-img {
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  div.news-content {
+    padding: 24px;
+  }
+  div.news-list .news-item {
+    width: 100%;
+  }
+  div.about-us-container {
+    margin-top: 10px;
+  }
+  div.about-us-content {
+    padding: 24px;
+  }
+  div.about-us-content .about-us-content-right {
+    width: 100%;
+    height: 100%;
+  }
+  footer .container {
+    padding: 24px;
+  }
+  div.attention-container .attention-content {
+    padding: 24px;
+  }
+  .footer-bottom .footer-bottom-left,
+  .footer-bottom {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  div.news-content .news-content-top {
+    margin: 20px 0;
+  }
 }
